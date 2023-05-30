@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace e_Agenda.WinApp.Compartilhado
+﻿namespace e_Agenda.WinApp.Compartilhado
 {
-    internal class EntidadeBase
+    [Serializable]
+    public abstract class EntidadeBase<TEntidade>
     {
+        public int id;
+
+        public abstract void AtualizarInformacoes(TEntidade registroAtualizado);
+
+        public abstract string[] Validar();
     }
 }

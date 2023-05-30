@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace e_Agenda.WinApp.ModuloContato
+﻿namespace e_Agenda.WinApp.ModuloContato
 {
-    internal class ListagemContatoControl
+    public partial class ListagemContatoControl : UserControl
     {
+        public ListagemContatoControl()
+        {
+            InitializeComponent();                       
+        }
+
+        public void AtualizarRegistros(List<Contato> contatos)
+        {
+            listContato.Items.Clear();
+
+            foreach (Contato item in contatos)
+            {
+                listContato.Items.Add(item);
+            }
+        }
+
+        public Contato ObterContatoSelecionado()
+        {
+            return (Contato)listContato.SelectedItem;
+        }
     }
 }

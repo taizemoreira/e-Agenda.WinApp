@@ -1,3 +1,5 @@
+using e_Agenda.WinApp.ModuloContato;
+
 namespace e_Agenda.WinApp
 {
     internal static class Program
@@ -7,11 +9,11 @@ namespace e_Agenda.WinApp
         /// </summary>
         [STAThread]
         static void Main()
-        {
+        {            
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new TelaPrincipal());
+            Application.Run(new TelaPrincipalForm());
         }
     }
 }

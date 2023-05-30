@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using e_Agenda.WinApp.Compartilhado;
 
 namespace e_Agenda.WinApp.ModuloContato
 {
-    internal class RepositorioContato
+    public class RepositorioContato : RepositorioEmMemoriaBase<Contato>
     {
+        public RepositorioContato(List<Contato> contatos)
+        {
+            this.listaRegistros = contatos;
+        }
     }
 }
