@@ -1,6 +1,6 @@
 ﻿namespace e_Agenda.WinApp
 {
-    partial class TelaPrincipalForm
+    partial class TelaPrincipalForm 
     {
         /// <summary>
         ///  Required designer variable.
